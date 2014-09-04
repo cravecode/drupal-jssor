@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Allows to support a new view handler.
+ */
+
+/**
+ * Implements hook_help().
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function jssor_theme() {
+  return array(
+    'jssor' => array(
+      'variables' => array(
+        'items' => NULL,
+      ),
+      'file' => 'jssor.theme.inc',
+      'template' => 'jssor',
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_permission().
+ */
+
