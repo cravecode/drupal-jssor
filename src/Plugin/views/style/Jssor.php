@@ -18,7 +18,7 @@ use Drupal\views\Plugin\views\style\StylePluginBase;
  *   id = "jssor",
  *   title = @Translation("Jssor Slider"),
  *   help = @Translation("Jssor Slider."),
- *   theme = "views_view_unformatted",
+ *   theme = "jssor",
  *   display_types = {"normal"}
  * )
  */

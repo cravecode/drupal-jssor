@@ -22,3 +22,6 @@ Next we will create a .module which is not mandatory anymore. We use is to set u
 
 
 http://js-tutorial.com/jssor-slider-556
+
+
+https://www.drupal.org/node/2274843

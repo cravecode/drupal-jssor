@@ -17,7 +17,8 @@ function jssor_theme() {
   return array(
     'jssor' => array(
       'variables' => array(
-        'items' => NULL,
+        'view' => NULL,
+        'rows' => NULL,
       ),
       'file' => 'jssor.theme.inc',
       'template' => 'jssor',

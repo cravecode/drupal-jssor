@@ -5,6 +5,8 @@
  * Preprocessors and helper functions to make theming easier.
  */
 
+use Drupal\Core\Template\Attribute;
+
 /**
  * Prepares variables for views jssor rows templates.
  *

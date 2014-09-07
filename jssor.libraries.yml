@@ -1,0 +1,7 @@
+jquery.jssor.slider:
+  remote: http://www.jssor.com/
+  version: 17.0
+  js:
+    /libraries/jssor/jquery-slider/js/jssor.slider.js: {}
+  dependencies:
+    - core/jquery
