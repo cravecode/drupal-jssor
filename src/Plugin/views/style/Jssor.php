@@ -25,7 +25,7 @@ use Drupal\views\Plugin\views\style\StylePluginBase;
 class Jssor extends StylePluginBase {
 
   /**
-   * Does the style plugin allows to use style plugins.
+   * Does the style plugin allows to use the row.
    *
    * @var bool
    */
@@ -37,5 +37,53 @@ class Jssor extends StylePluginBase {
    * @var bool
    */
   protected $usesRowClass = TRUE;
+
+  /**
+   * Does the style plugin support grouping.
+   *
+   * @var bool
+   */
+  protected $usesGrouping = FALSE;
+
+
+  /**
+   * Overrides \Drupal\views\Plugin\views\style\StylePluginBase\StylePluginBase::defineOptions().
+   */
+  protected function defineOptions() {
+    $options = parent::defineOptions();
+
+    $options['autoplay'] = array('default' => FALSE);
+    $options['autoplayinterval'] = array('default' => 3000);
+
+    return $options;
+  }
+
+  /**
+   * Overrides \Drupal\views\Plugin\views\style\StylePluginBase\StylePluginBase::buildOptionsForm().
+   */
+  public function buildOptionsForm(&$form, &$form_state) {
+    parent::buildOptionsForm($form, $form_state);
+
+    $form['autoplay'] = array(
+      '#type' => 'checkbox',
+      '#title' => $this->t('Autoplay'),
+      '#default_value' => $this->options['autoplay'],
+      '#description' => t('Enable to auto play.'),
+      '#weight' => -4,
+    );
+
+    $form['autoplayinterval'] = array(
+      '#type' => 'number',
+      '#title' => $this->t('Autoplay interval'),
+      '#attributes' => array(
+        'min' => 0,
+        'step' => 1,
+        'value' => $this->options['autoplayinterval'],
+      ),
+      '#description' => t('Interval (in milliseconds) to go for next slide since the previous stopped.'),
+      '#weight' => -3,
+    );
+
+  }
 
 }

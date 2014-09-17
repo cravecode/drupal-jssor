@@ -14,13 +14,14 @@
  * @ingroup themeable
  */
 #}
+
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
 
-<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+<div id="slider_container" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 800px; overflow: hidden;">
   <!-- Slides Container -->
-  <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+  <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1300px; height: 800px;">
 
     {% for row in rows %}
       <div{{ row.attributes }}>
@@ -30,4 +31,3 @@
 
   </div>
 </div>
-
