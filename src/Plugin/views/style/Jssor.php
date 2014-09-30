@@ -8,6 +8,7 @@
 namespace Drupal\jssor\Plugin\views\style;
 
 use Drupal\views\Plugin\views\style\StylePluginBase;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Style plugin to render each item in an ordered or unordered list.
@@ -47,7 +48,7 @@ class Jssor extends StylePluginBase {
 
 
   /**
-   * Overrides \Drupal\views\Plugin\views\style\StylePluginBase\StylePluginBase::defineOptions().
+   * {@inheritdoc}
    */
   protected function defineOptions() {
     $options = parent::defineOptions();
@@ -59,10 +60,9 @@ class Jssor extends StylePluginBase {
   }
 
   /**
-   * Overrides \Drupal\views\Plugin\views\style\StylePluginBase\StylePluginBase::buildOptionsForm().
+   * {@inheritdoc}
    */
-  public function buildOptionsForm(&$form, &$form_state) {
-    parent::buildOptionsForm($form, $form_state);
+  public function buildOptionsForm(&$form, FormStateInterface $form_state) {
 
     $form['autoplay'] = array(
       '#type' => 'checkbox',
