@@ -1,7 +1,14 @@
 jquery.jssor.slider:
   remote: http://www.jssor.com/
   version: 17.0
+  license:
+    name: MIT
+    url: https://github.com/jssor/slider/blob/master/MIT-LICENSE.txt
+    gpl-compatible: true
   js:
-    /libraries/jssor/jquery-slider/js/jssor.slider.min.js: {}
+    js/jssor_view.js: {}
+    /libraries/jssor-slider/js/jssor.slider.min.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
+    - core/drupalSettings
