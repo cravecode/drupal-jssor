@@ -2,11 +2,7 @@
 
 /**
  * @file
- * Allows to support a new view handler.
- */
-
-/**
- * Implements hook_help().
+ * Allows support of a new view handler.
  */
 
 
@@ -21,15 +17,9 @@ function jssor_theme() {
         'rows' => NULL,
       ),
       'file' => 'jssor.theme.inc',
-      'template' => 'jssor',
     ),
   );
 }
-
-
-/**
- * Implements hook_permission().
- */
 
 
 /**

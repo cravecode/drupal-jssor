@@ -26,22 +26,31 @@ function template_preprocess_jssor(&$variables) {
   // View's options.
   $options = $style->options;
 
-  // https://api.drupal.org/api/drupal/core!includes!common.inc/function/_drupal_add_js/8
-  _drupal_add_library('jssor/jquery.jssor.slider');
+  // Attach library.
+  $view->element['#attached']['library'][] = 'jssor/jquery.jssor.slider';
 
-  _drupal_add_js('
-  jQuery(document).ready(function ($) {
-    var options = {
-      $FillMode: 2,
-      $AutoPlay: ' . $options['autoplay']. ',
-      $AutoPlayInterval: ' . $options['autoplayinterval']. ',
-    };
+  // Attach settings javascript.
+  $settings = array(
+    'views' => array(
+      'jssorViews' => array(
+        'views_dom_id:' . $view->dom_id => array(
+          'view_name' => $view->storage->id(),
+          'view_display_id' => $view->current_display,
+          'view_base_path' => $view->getPath(),
+          'view_dom_id' => $view->dom_id,
+          '$AutoPlay' => $options['autoplay'],
+          '$AutoPlayInterval' => $options['autoplayinterval'],
+        ),
+      ),
+    ),
+  );
+  $view->element['#attached']['js'][] = array(
+    'type' => 'setting',
+    'data' => $settings,
+  );
 
-     var jssor_slider = new $JssorSlider$("slider_container", options);
-     jssor_slider.$SetScaleWidth(Math.min(bodyWidth, 1920));
-
-  });
-  ', 'inline');
+  // Create a unique slider ID.
+  $variables['slider_id'] = 'slider-dom-id-' . $view->dom_id;
 
   $default_row_class = isset($options['default_row_class']) ? $options['default_row_class'] : FALSE;
   foreach ($rows as $id => $row) {

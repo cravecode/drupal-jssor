@@ -4,6 +4,7 @@
  * Default theme implementation to display a view of jssor slider.
  *
  * Available variables:
+ * - slider_id: Unique slider ID. Unfortunately Jssor Slider require an ID.
  * - title: The title of this group of rows. May be empty.
  * - rows: A list of the view's row items.
  *   - attributes: The row's HTML attributes.
@@ -19,7 +20,7 @@
   <h3>{{ title }}</h3>
 {% endif %}
 
-<div id="slider_container" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 800px; overflow: hidden;">
+<div id="{{ slider_id }}" class="slider_container" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 800px; overflow: hidden;">
   <!-- Slides Container -->
   <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1300px; height: 800px;">
 
