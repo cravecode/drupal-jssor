@@ -38,12 +38,21 @@ function template_preprocess_jssor(&$variables) {
           'view_display_id' => $view->current_display,
           'view_base_path' => $view->getPath(),
           'view_dom_id' => $view->dom_id,
-          '$AutoPlay' => $options['autoplay'],
-          '$AutoPlayInterval' => $options['autoplayinterval'],
+          'arrownavigator' => $options['global']['arrownavigator'],
+          'bulletnavigator' => $options['global']['bulletnavigator'],
+          '$AutoPlay' => $options['global']['autoplay'],
+          '$AutoPlayInterval' => $options['global']['autoplayinterval'],
+          '$ArrowNavigatorOptions' => array(
+            '$Class' => '$JssorArrowNavigator$',
+          ),
+          '$BulletNavigatorOptions' => array(
+            '$Class' => '$JssorBulletNavigator$',
+          ),
         ),
       ),
     ),
   );
+
   $view->element['#attached']['js'][] = array(
     'type' => 'setting',
     'data' => $settings,
@@ -51,6 +60,12 @@ function template_preprocess_jssor(&$variables) {
 
   // Create a unique slider ID.
   $variables['slider_id'] = 'slider-dom-id-' . $view->dom_id;
+
+  // Enable arrow navigator.
+  $variables['arrownavigator'] = $options['global']['arrownavigator'];
+
+  // Enable bullet navigator.
+  $variables['bulletnavigator'] = $options['global']['bulletnavigator'];
 
   $default_row_class = isset($options['default_row_class']) ? $options['default_row_class'] : FALSE;
   foreach ($rows as $id => $row) {
