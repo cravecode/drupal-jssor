@@ -46,56 +46,105 @@ class Jssor extends StylePluginBase {
    */
   protected $usesGrouping = FALSE;
 
-
   /**
    * {@inheritdoc}
    */
   protected function defineOptions() {
     $options = parent::defineOptions();
-
-    // Whether to pause when mouse over if a slider is auto playing, 0: no pause, 1: pause for desktop, 2: pause for touch device, 3: pause for desktop and touch device, 4: freeze for desktop, 8: freeze for touch device, 12: freeze for desktop and touch device, default value is 1.
-    // PauseOnHover.
-    $options['pauseonhover'] = array('default' => 0);
-
-    //{$PlayOrientation	optional	1	Orientation to play slide (for auto play, navigation), 1: horizental, 2: vertical, 5: horizental reverse, 6: vertical reverse
-    //{$BulletNavigatorOptions}	optional	null	Options to specify and enable navigator or not
-    //{$ArrowNavigatorOptions}	optional	null	Options to specify and enable arrow navigator or not
-    //{$ThumbnailNavigatorOptions}	optional	null	Options to specify and enable thumbnail navigator or not
-    //{$SlideshowOptions}	optional	null	Options to specify and enable slideshow or not
-    //{$CaptionSliderOptions}	optional	null	Options which specifies how to animate caption
-
-    $options['autoplay'] = array('default' => FALSE);
+    $options['autoplay'] = array('default' => TRUE);
     $options['autoplayinterval'] = array('default' => 3000);
-
+    $options['arrownavigator'] = array('default' => FALSE);
+    $options['bulletnavigator'] = array('default' => FALSE);
+    $options['chancetoshow'] = array('default' => 0);
     return $options;
   }
-
 
   /**
    * {@inheritdoc}
    */
   public function buildOptionsForm(&$form, FormStateInterface $form_state) {
+    parent::buildOptionsForm($form, $form_state);
 
-    $form['autoplay'] = array(
+    $form['global'] = array(
+      '#type' => 'fieldset',
+      '#title' => 'Global',
+    );
+    $form['global']['autoplay'] = array(
       '#type' => 'checkbox',
       '#title' => $this->t('Autoplay'),
-      '#default_value' => $this->options['autoplay'],
+      '#default_value' => (isset($this->options['global']['autoplay'])) ?
+        $this->options['global']['autoplay'] : $this->options['autoplay'],
       '#description' => t('Enable to auto play.'),
-      '#weight' => -4,
     );
-
-    $form['autoplayinterval'] = array(
+    $form['global']['autoplayinterval'] = array(
       '#type' => 'number',
       '#title' => $this->t('Autoplay interval'),
       '#attributes' => array(
         'min' => 0,
         'step' => 1,
-        'value' => $this->options['autoplayinterval'],
+        'value' => (isset($this->options['global']['autoplayinterval'])) ?
+          $this->options['global']['autoplayinterval'] : $this->options['autoplayinterval'],
       ),
       '#description' => t('Interval (in milliseconds) to go for next slide since the previous stopped.'),
-      '#weight' => -3,
+      '#states' => array(
+        'visible' => array(
+          ':input[name="style_options[global][autoplay]"]' => array('checked' => TRUE),
+        ),
+      ),
     );
-
+    $form['global']['arrownavigator'] = array(
+      '#type' => 'checkbox',
+      '#title' => $this->t('Enable arrow navigator'),
+      '#default_value' => (isset($this->options['global']['arrownavigator'])) ?
+        $this->options['global']['arrownavigator'] : $this->options['arrownavigator'],
+    );
+    $form['global']['bulletnavigator'] = array(
+      '#type' => 'checkbox',
+      '#title' => $this->t('Enable bullet navigator'),
+      '#default_value' => (isset($this->options['global']['bulletnavigator'])) ?
+        $this->options['global']['bulletnavigator'] : $this->options['bulletnavigator'],
+    );
+    // Arrow navigator.
+    $form['arrownavigator'] = array(
+      '#type' => 'fieldset',
+      '#title' => $this->t('Arrow navigator'),
+      '#states' => array(
+        'visible' => array(
+          ':input[name="style_options[global][arrownavigator]"]' => array('checked' => TRUE),
+        ),
+      ),
+    );
+    $form['arrownavigator']['chancetoshow'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Chance to show'),
+      '#default_value' => (isset($this->options['arrownavigator']['chancetoshow'])) ?
+        $this->options['arrownavigator']['chancetoshow'] : $this->options['chancetoshow'],
+      '#options' => array(
+        0 => $this->t('Never'),
+        1 => $this->t('Mouse Over'),
+        2 => $this->t('Always'),
+      ),
+    );
+    // Bullet navigator.
+    $form['bulletnavigator'] = array(
+      '#type' => 'fieldset',
+      '#title' => $this->t('Bullet navigator'),
+      '#states' => array(
+        'visible' => array(
+          ':input[name="style_options[global][bulletnavigator]"]' => array('checked' => TRUE),
+        ),
+      ),
+    );
+    $form['bulletnavigator']['chancetoshow'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Chance to show'),
+      '#default_value' => (isset($this->options['bulletnavigator']['chancetoshow'])) ?
+        $this->options['bulletnavigator']['chancetoshow'] : $this->options['chancetoshow'],
+      '#options' => array(
+        0 => $this->t('Never'),
+        1 => $this->t('Mouse Over'),
+        2 => $this->t('Always'),
+      ),
+    );
   }
-
 }
