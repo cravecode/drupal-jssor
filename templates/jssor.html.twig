@@ -4,6 +4,8 @@
  * Default theme implementation to display a view of jssor slider.
  *
  * Available variables:
+ * - bulletnavigator: Enable or not the bullet navigator.
+ * - arrownavigator: Enable or not the arrow navigator.
  * - slider_id: Unique slider ID. Unfortunately Jssor Slider require an ID.
  * - title: The title of this group of rows. May be empty.
  * - rows: A list of the view's row items.
@@ -21,6 +23,7 @@
 {% endif %}
 
 <div id="{{ slider_id }}" class="slider_container" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 800px; overflow: hidden;">
+
   <!-- Slides Container -->
   <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1300px; height: 800px;">
 
@@ -31,4 +34,78 @@
     {% endfor %}
 
   </div>
+
+  {% if bulletnavigator %}
+    <!-- Bullet Navigator Skin End -->
+    <style>
+      .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        background: url(/libraries/jssor-slider/img/b05.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .jssorb05 div {
+        background-position: -7px -7px;
+      }
+
+      .jssorb05 div:hover, .jssorb05 .av:hover {
+        background-position: -37px -7px;
+      }
+
+      .jssorb05 .av {
+        background-position: -67px -7px;
+      }
+
+      .jssorb05 .dn, .jssorb05 .dn:hover {
+        background-position: -97px -7px;
+      }
+    </style>
+    <!-- bullet navigator container -->
+    <div u="navigator" class="jssorb05" style="position: absolute; bottom: 16px; right: 6px;">
+      <!-- bullet navigator item prototype -->
+      <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+    </div>
+  {% endif %}
+
+  {% if arrownavigator %}
+    <!-- Arrow Navigator Skin Begin -->
+    <style>
+      .jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn {
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        background: url(/libraries/jssor-slider/img/a11.png) no-repeat;
+        overflow: hidden;
+      }
+
+      .jssora11l {
+        background-position: -11px -41px;
+      }
+
+      .jssora11r {
+        background-position: -71px -41px;
+      }
+
+      .jssora11l:hover {
+        background-position: -131px -41px;
+      }
+
+      .jssora11r:hover {
+        background-position: -191px -41px;
+      }
+
+      .jssora11ldn {
+        background-position: -251px -41px;
+      }
+
+      .jssora11rdn {
+        background-position: -311px -41px;
+      }
+    </style>
+    <!-- Arrow Left -->
+    <span u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 123px; left: 8px;"></span>
+    <!-- Arrow Right -->
+    <span u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 123px; right: 8px"></span>
+  {% endif %}
+
 </div>
