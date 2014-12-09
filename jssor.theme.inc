@@ -34,14 +34,12 @@ function template_preprocess_jssor(&$variables) {
     'views' => array(
       'jssorViews' => array(
         'views_dom_id:' . $view->dom_id => array(
-          'view_name' => $view->storage->id(),
-          'view_display_id' => $view->current_display,
-          'view_base_path' => $view->getPath(),
+          //'view_name' => $view->storage->id(),
+          //'view_display_id' => $view->current_display,
+          //'view_base_path' => $view->getPath(),
           'view_dom_id' => $view->dom_id,
-          'arrownavigator' => $options['global']['arrownavigator'],
-          'bulletnavigator' => $options['global']['bulletnavigator'],
-          '$AutoPlay' => $options['global']['autoplay'],
-          '$AutoPlayInterval' => $options['global']['autoplayinterval'],
+          '$AutoPlay' => ($options['global']['autoplay']) ? true : false,
+          '$AutoPlayInterval' => (int) $options['global']['autoplayinterval'],
           '$ArrowNavigatorOptions' => array(
             '$Class' => '$JssorArrowNavigator$',
           ),
@@ -52,6 +50,10 @@ function template_preprocess_jssor(&$variables) {
       ),
     ),
   );
+
+  // Arrow navigation.
+
+  // Bullet navigation.
 
   $view->element['#attached']['js'][] = array(
     'type' => 'setting',
