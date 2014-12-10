@@ -56,6 +56,9 @@ class Jssor extends StylePluginBase {
     $options['arrownavigator'] = array('default' => FALSE);
     $options['bulletnavigator'] = array('default' => FALSE);
     $options['chancetoshow'] = array('default' => 0);
+    $options['arrowskin'] = array('default' => 1);
+    $options['bulletskin'] = array('default' => 1);
+    $options['autocenter'] = array('default' => 0);
     return $options;
   }
 
@@ -104,6 +107,7 @@ class Jssor extends StylePluginBase {
       '#default_value' => (isset($this->options['global']['bulletnavigator'])) ?
         $this->options['global']['bulletnavigator'] : $this->options['bulletnavigator'],
     );
+
     // Arrow navigator.
     $form['arrownavigator'] = array(
       '#type' => 'fieldset',
@@ -112,6 +116,31 @@ class Jssor extends StylePluginBase {
         'visible' => array(
           ':input[name="style_options[global][arrownavigator]"]' => array('checked' => TRUE),
         ),
+      ),
+    );
+    $arrowskin = array();
+    for ($i = 1 ; $i < 22; $i++) {
+      $i = ($i < 10) ? '0' . $i : $i;
+      $arrowskin[$i] = $this->t('Arrow ') . $i;
+    }
+    $form['arrownavigator']['arrowskin'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Skin'),
+      '#default_value' => (isset($this->options['arrownavigator']['arrowskin'])) ?
+        $this->options['arrownavigator']['arrowskin'] : $this->options['arrowskin'],
+      '#options' => $arrowskin,
+    );
+    $form['arrownavigator']['autocenter'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Auto center'),
+      '#description' => $this->t('Auto center arrows in parent container'),
+      '#default_value' => (isset($this->options['arrownavigator']['autocenter'])) ?
+        $this->options['arrownavigator']['autocenter'] : $this->options['autocenter'],
+      '#options' => array(
+        0 => $this->t('No'),
+        1 => $this->t('Horizontal'),
+        2 => $this->t('Vertical'),
+        3 => $this->t('Both'),
       ),
     );
     $form['arrownavigator']['chancetoshow'] = array(
@@ -125,6 +154,7 @@ class Jssor extends StylePluginBase {
         2 => $this->t('Always'),
       ),
     );
+
     // Bullet navigator.
     $form['bulletnavigator'] = array(
       '#type' => 'fieldset',
@@ -133,6 +163,31 @@ class Jssor extends StylePluginBase {
         'visible' => array(
           ':input[name="style_options[global][bulletnavigator]"]' => array('checked' => TRUE),
         ),
+      ),
+    );
+    $bulletskin = array();
+    for ($i = 1 ; $i < 22; $i++) {
+      $i = ($i < 10) ? '0' . $i : $i;
+      $bulletskin[$i] = $this->t('Bullet ') . $i;
+    }
+    $form['bulletnavigator']['bulletskin'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Skin'),
+      '#default_value' => (isset($this->options['bulletnavigator']['bulletskin'])) ?
+        $this->options['bulletnavigator']['bulletskin'] : $this->options['bulletskin'],
+      '#options' => $bulletskin,
+    );
+    $form['bulletnavigator']['autocenter'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Auto center'),
+      '#description' => $this->t('Auto center arrows in parent container'),
+      '#default_value' => (isset($this->options['bulletnavigator']['autocenter'])) ?
+        $this->options['bulletnavigator']['autocenter'] : $this->options['autocenter'],
+      '#options' => array(
+        0 => $this->t('No'),
+        1 => $this->t('Horizontal'),
+        2 => $this->t('Vertical'),
+        3 => $this->t('Both'),
       ),
     );
     $form['bulletnavigator']['chancetoshow'] = array(

@@ -4,13 +4,15 @@
  * Default theme implementation to display a view of jssor slider.
  *
  * Available variables:
- * - bulletnavigator: Enable or not the bullet navigator.
- * - arrownavigator: Enable or not the arrow navigator.
  * - slider_id: Unique slider ID. Unfortunately Jssor Slider require an ID.
  * - title: The title of this group of rows. May be empty.
  * - rows: A list of the view's row items.
  *   - attributes: The row's HTML attributes.
  *   - content: The row's content.
+ * - arrowskin: Arrow skin
+ * - bulletskin: Bullet skin.
+ * - bulletnavigator: Enable or not the bullet navigator.
+ * - arrownavigator: Enable or not the arrow navigator.
  *
  * @see template_preprocess_jssor()
  *
@@ -61,7 +63,7 @@
       }
     </style>
     <!-- bullet navigator container -->
-    <div u="navigator" class="jssorb05" style="position: absolute; bottom: 16px; right: 6px;">
+    <div u="navigator" class="jssorb{{ bulletskin }}" style="position: absolute; bottom: 16px; right: 6px;">
       <!-- bullet navigator item prototype -->
       <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
     </div>
@@ -103,9 +105,9 @@
       }
     </style>
     <!-- Arrow Left -->
-    <span u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 123px; left: 8px;"></span>
+    <span u="arrowleft" class="jssora{{ arrowskin }}l" style="width: 37px; height: 37px; top: 123px; left: 8px;"></span>
     <!-- Arrow Right -->
-    <span u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 123px; right: 8px"></span>
+    <span u="arrowright" class="jssora{{ arrowskin }}r" style="width: 37px; height: 37px; top: 123px; right: 8px"></span>
   {% endif %}
 
 </div>

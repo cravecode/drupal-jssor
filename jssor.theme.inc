@@ -69,6 +69,11 @@ function template_preprocess_jssor(&$variables) {
   // Enable bullet navigator.
   $variables['bulletnavigator'] = $options['global']['bulletnavigator'];
 
+  // Skins.
+  $variables['arrowskin'] = $options['arrownavigator']['arrowskin'];
+  $variables['bulletskin'] = $options['bulletnavigator']['bulletskin'];
+
+
   $default_row_class = isset($options['default_row_class']) ? $options['default_row_class'] : FALSE;
   foreach ($rows as $id => $row) {
     $variables['rows'][$id] = array();

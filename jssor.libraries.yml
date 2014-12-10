@@ -8,6 +8,9 @@ jquery.jssor.slider:
   js:
     js/jssor_view.js: {}
     /libraries/jssor-slider/js/jssor.slider.min.js: {}
+  css:
+    component:
+      css/jssor-skin.css: {}
   dependencies:
     - core/jquery
     - core/drupal
