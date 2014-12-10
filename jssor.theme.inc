@@ -29,35 +29,21 @@ function template_preprocess_jssor(&$variables) {
   // Attach library.
   $view->element['#attached']['library'][] = 'jssor/jquery.jssor.slider';
 
-  // Attach settings javascript.
-  $settings = array(
-    'views' => array(
-      'jssorViews' => array(
-        'views_dom_id:' . $view->dom_id => array(
-          //'view_name' => $view->storage->id(),
-          //'view_display_id' => $view->current_display,
-          //'view_base_path' => $view->getPath(),
-          'view_dom_id' => $view->dom_id,
-          '$AutoPlay' => ($options['global']['autoplay']) ? true : false,
-          '$AutoPlayInterval' => (int) $options['global']['autoplayinterval'],
-          '$ArrowNavigatorOptions' => array(
-            '$Class' => '$JssorArrowNavigator$',
-          ),
-          '$BulletNavigatorOptions' => array(
-            '$Class' => '$JssorBulletNavigator$',
-          ),
-        ),
-      ),
+  // Attach settings.
+  $view->element['#attached']['drupalSettings']['views']['jssorViews']['views_dom_id:' . $view->dom_id] = array(
+    //'view_name' => $view->storage->id(),
+    //'view_display_id' => $view->current_display,
+    //'view_base_path' => $view->getPath(),
+    'view_dom_id' => $view->dom_id,
+    '$AutoPlay' => ($options['global']['autoplay']) ? true : false,
+    '$AutoPlayInterval' => (int) $options['global']['autoplayinterval'],
+    '$ArrowNavigatorOptions' => array(
+      '$Class' => '$JssorArrowNavigator$',
+      '$AutoCenter' => 2,
     ),
-  );
-
-  // Arrow navigation.
-
-  // Bullet navigation.
-
-  $view->element['#attached']['js'][] = array(
-    'type' => 'setting',
-    'data' => $settings,
+    '$BulletNavigatorOptions' => array(
+      '$Class' => '$JssorBulletNavigator$',
+    ),
   );
 
   // Create a unique slider ID.
@@ -72,7 +58,6 @@ function template_preprocess_jssor(&$variables) {
   // Skins.
   $variables['arrowskin'] = $options['arrownavigator']['arrowskin'];
   $variables['bulletskin'] = $options['bulletnavigator']['bulletskin'];
-
 
   $default_row_class = isset($options['default_row_class']) ? $options['default_row_class'] : FALSE;
   foreach ($rows as $id => $row) {

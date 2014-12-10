@@ -19,7 +19,7 @@
   Drupal.behaviors.ViewsJssorView = {};
   Drupal.behaviors.ViewsJssorView.attach = function () {
     if (drupalSettings && drupalSettings.views && drupalSettings.views.jssorViews) {
-      var jssorViews = drupalSettings.views.jssorViews;
+      var jssorViews = drupalSettings.views.jssorViews
       for (var i in jssorViews) {
         if (jssorViews.hasOwnProperty(i)) {
           Drupal.views.instances[i] = new Drupal.views.jssorView(jssorViews[i]);
