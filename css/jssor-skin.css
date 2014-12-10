@@ -7,7 +7,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a01.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a01.png) no-repeat;
     overflow:hidden;
 }
 .jssora01l { background-position: -8px -38px; }
@@ -21,7 +21,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a02.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a02.png) no-repeat;
     overflow:hidden;
 }
 .jssora02l { background-position: -3px -33px; }
@@ -35,7 +35,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a03.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a03.png) no-repeat;
     overflow:hidden;
 }
 .jssora03l { background-position: -3px -33px; }
@@ -49,7 +49,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a04.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a04.png) no-repeat;
     overflow:hidden;
 }
 .jssora04l { background-position: -16px -39px; }
@@ -63,7 +63,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a17.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a17.png) no-repeat;
     overflow:hidden;
 }
 .jssora05l { background-position: -10px -40px; }
@@ -77,7 +77,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a06.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a06.png) no-repeat;
     overflow:hidden;
 }
 .jssora06l { background-position: -8px -38px; }
@@ -91,7 +91,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a07.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a07.png) no-repeat;
     overflow:hidden;
 }
 .jssora07l { background-position: -5px -35px; }
@@ -105,7 +105,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a08.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a08.png) no-repeat;
     overflow:hidden;
     opacity: .4; filter:alpha(opacity=40);
 }
@@ -120,7 +120,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a09.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a09.png) no-repeat;
     overflow:hidden;
     opacity: .4; filter:alpha(opacity=40);
 }
@@ -135,7 +135,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a10.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a10.png) no-repeat;
     overflow:hidden;
 }
 .jssora10l { background-position: -16px -39px; }
@@ -149,7 +149,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a11.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a11.png) no-repeat;
     overflow:hidden;
 }
 .jssora11l { background-position: -11px -41px; }
@@ -163,7 +163,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a12.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a12.png) no-repeat;
     overflow:hidden;
 }
 .jssora12l { background-position: -16px -37px; }
@@ -177,7 +177,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a13.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a13.png) no-repeat;
     overflow:hidden;
 }
 .jssora13l { background-position: -10px -35px; }
@@ -191,7 +191,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a14.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a14.png) no-repeat;
     overflow:hidden;
 }
 .jssora14l { background-position: -15px -35px; }
@@ -205,7 +205,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a15.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a15.png) no-repeat;
     overflow:hidden;
 }
 .jssora15l { background-position: -20px -41px; }
@@ -219,7 +219,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a16.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a16.png) no-repeat;
     overflow:hidden;
 }
 .jssora16l { background-position: -19px -42px; }
@@ -233,7 +233,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a18.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a18.png) no-repeat;
     overflow:hidden;
 }
 .jssora18l {
@@ -264,7 +264,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a19.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a19.png) no-repeat;
     overflow:hidden;
 }
 .jssora19l { background-position: -5px -35px; }
@@ -278,7 +278,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a20.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/a20.png) no-repeat;
     overflow:hidden;
 }
 .jssora20l { background-position: -3px -33px; }
@@ -292,7 +292,7 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../img/a21.png) center center no-repeat;
+    background: url(/libraries/jssor-slider/img/a21.png) center center no-repeat;
     overflow: hidden;
 }
 .jssora21l { background-position: -3px -33px; }
@@ -320,7 +320,7 @@
 .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
 
 .jssorb02 div, .jssorb02 div:hover, .jssorb02 .av {
-    background: url(../img/b02.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b02.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -330,7 +330,7 @@
 .jssorb02 .dn, .jssorb02 .dn:hover { background-position: -95px -5px; }
 
 .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
-    background: url(../img/b03.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b03.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -340,7 +340,7 @@
 .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
 
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-    background: url(../img/b05.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b05.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -350,7 +350,7 @@
 .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
 .jssorb06 div, .jssorb06 div:hover, .jssorb06 .av {
-    background: url(../img/b06.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b06.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -360,7 +360,7 @@
 .jssorb06 .dn, .jssorb06 .dn:hover { background-position: -96px -6px; }
 
 .jssorb07 div, .jssorb07 div:hover, .jssorb07 .av {
-    background: url(../img/b07.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b07.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -382,7 +382,7 @@
 .jssorb09 .dn, .jssorb09 .dn:hover { background-color: #a9a9a9; }
 
 .jssorb10 div, .jssorb10 div:hover, .jssorb10 .av {
-    background: url(../img/b10.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b10.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -392,7 +392,7 @@
 .jssorb10 .dn, .jssorb10 .dn:hover { background-position: -100px -10px; }
 
 .jssorb11 div, .jssorb11 div:hover, .jssorb11 .av {
-    background: url(../img/b11.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b11.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -402,7 +402,7 @@
 .jssorb11 .dn, .jssorb11 .dn:hover { background-position: -100px -10px; }
 
 .jssorb12 div, .jssorb12 div:hover, .jssorb12 .av {
-    background: url(../img/b12.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b12.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -412,7 +412,7 @@
 .jssorb12 .dn, .jssorb12 .dn:hover { background-position: -97px -7px; }
 
 .jssorb13 div, .jssorb13 div:hover, .jssorb13 .av {
-    background: url(../img/b13.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b13.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -422,7 +422,7 @@
 .jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
 
 .jssorb14 div, .jssorb14 div:hover, .jssorb14 .av {
-    background: url(../img/b14.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b14.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -432,7 +432,7 @@
 .jssorb14 .dn, .jssorb14 .dn:hover { background-position: -99px -9px; }
 
 .jssorb16 div, .jssorb16 div:hover, .jssorb16 .av {
-    background: url(../img/b16.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b16.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -442,7 +442,7 @@
 .jssorb16 .dn, .jssorb16 .dn:hover { background-position: -95px -5px; }
 
 .jssorb17 div, .jssorb17 div:hover, .jssorb17 .av {
-    background: url(../img/b17.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b17.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -452,7 +452,7 @@
 .jssorb17 .dn, .jssorb17 .dn:hover { background-position: -97px -7px; }
 
 .jssorb18 div, .jssorb18 div:hover, .jssorb18 .av {
-    background: url(../img/b18.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b18.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -468,7 +468,7 @@
 .jssorb18 div:hover .n, .jssorb18 .av .n, .jssorb18 .av:hover .n, .jssorb18 .dn .n { display: block; }
 
 .jssorb20 div, .jssorb20 div:hover, .jssorb20 .av {
-    background: url(../img/b20.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b20.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
@@ -478,7 +478,7 @@
 .jssorb20 .dn, .jssorb20 .dn:hover { background-position: -95px -5px; }
 
 .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-    background: url(../img/b21.png) no-repeat;
+    background: url(/libraries/jssor-slider/img/b21.png) no-repeat;
     overflow:hidden;
     cursor: pointer;
 }
