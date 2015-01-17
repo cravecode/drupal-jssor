@@ -2,487 +2,1276 @@
  * @file
  * Styles for jssor skin.
  */
-
+/* line 7, ../sass/jssor-skin.scss */
 .jssora01l, .jssora01r, .jssora01ldn, .jssora01rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a01.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a01.png) no-repeat;
+  overflow: hidden;
 }
-.jssora01l { background-position: -8px -38px; }
-.jssora01r { background-position: -68px -38px; }
-.jssora01l:hover { background-position: -128px -38px; }
-.jssora01r:hover { background-position: -188px -38px; }
-.jssora01ldn { background-position: -8px -38px; }
-.jssora01rdn { background-position: -68px -38px; }
 
+/* line 14, ../sass/jssor-skin.scss */
+.jssora01l {
+  background-position: -8px -38px;
+}
+
+/* line 15, ../sass/jssor-skin.scss */
+.jssora01r {
+  background-position: -68px -38px;
+}
+
+/* line 16, ../sass/jssor-skin.scss */
+.jssora01l:hover {
+  background-position: -128px -38px;
+}
+
+/* line 17, ../sass/jssor-skin.scss */
+.jssora01r:hover {
+  background-position: -188px -38px;
+}
+
+/* line 18, ../sass/jssor-skin.scss */
+.jssora01ldn {
+  background-position: -8px -38px;
+}
+
+/* line 19, ../sass/jssor-skin.scss */
+.jssora01rdn {
+  background-position: -68px -38px;
+}
+
+/* line 21, ../sass/jssor-skin.scss */
 .jssora02l, .jssora02r, .jssora02ldn, .jssora02rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a02.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a02.png) no-repeat;
+  overflow: hidden;
 }
-.jssora02l { background-position: -3px -33px; }
-.jssora02r { background-position: -63px -33px; }
-.jssora02l:hover { background-position: -123px -33px; }
-.jssora02r:hover { background-position: -183px -33px; }
-.jssora02ldn { background-position: -3px -33px; }
-.jssora02rdn { background-position: -63px -33px; }
 
+/* line 28, ../sass/jssor-skin.scss */
+.jssora02l {
+  background-position: -3px -33px;
+}
+
+/* line 29, ../sass/jssor-skin.scss */
+.jssora02r {
+  background-position: -63px -33px;
+}
+
+/* line 30, ../sass/jssor-skin.scss */
+.jssora02l:hover {
+  background-position: -123px -33px;
+}
+
+/* line 31, ../sass/jssor-skin.scss */
+.jssora02r:hover {
+  background-position: -183px -33px;
+}
+
+/* line 32, ../sass/jssor-skin.scss */
+.jssora02ldn {
+  background-position: -3px -33px;
+}
+
+/* line 33, ../sass/jssor-skin.scss */
+.jssora02rdn {
+  background-position: -63px -33px;
+}
+
+/* line 35, ../sass/jssor-skin.scss */
 .jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a03.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a03.png) no-repeat;
+  overflow: hidden;
 }
-.jssora03l { background-position: -3px -33px; }
-.jssora03r { background-position: -63px -33px; }
-.jssora03l:hover { background-position: -123px -33px; }
-.jssora03r:hover { background-position: -183px -33px; }
-.jssora03ldn { background-position: -243px -33px; }
-.jssora03rdn { background-position: -303px -33px; }
 
+/* line 42, ../sass/jssor-skin.scss */
+.jssora03l {
+  background-position: -3px -33px;
+}
+
+/* line 43, ../sass/jssor-skin.scss */
+.jssora03r {
+  background-position: -63px -33px;
+}
+
+/* line 44, ../sass/jssor-skin.scss */
+.jssora03l:hover {
+  background-position: -123px -33px;
+}
+
+/* line 45, ../sass/jssor-skin.scss */
+.jssora03r:hover {
+  background-position: -183px -33px;
+}
+
+/* line 46, ../sass/jssor-skin.scss */
+.jssora03ldn {
+  background-position: -243px -33px;
+}
+
+/* line 47, ../sass/jssor-skin.scss */
+.jssora03rdn {
+  background-position: -303px -33px;
+}
+
+/* line 49, ../sass/jssor-skin.scss */
 .jssora04l, .jssora04r, .jssora04ldn, .jssora04rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a04.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a04.png) no-repeat;
+  overflow: hidden;
 }
-.jssora04l { background-position: -16px -39px; }
-.jssora04r { background-position: -76px -39px; }
-.jssora04l:hover { background-position: -136px -39px; }
-.jssora04r:hover { background-position: -196px -39px; }
-.jssora04ldn { background-position: -256px -39px; }
-.jssora04rdn { background-position: -316px -39px; }
 
+/* line 56, ../sass/jssor-skin.scss */
+.jssora04l {
+  background-position: -16px -39px;
+}
+
+/* line 57, ../sass/jssor-skin.scss */
+.jssora04r {
+  background-position: -76px -39px;
+}
+
+/* line 58, ../sass/jssor-skin.scss */
+.jssora04l:hover {
+  background-position: -136px -39px;
+}
+
+/* line 59, ../sass/jssor-skin.scss */
+.jssora04r:hover {
+  background-position: -196px -39px;
+}
+
+/* line 60, ../sass/jssor-skin.scss */
+.jssora04ldn {
+  background-position: -256px -39px;
+}
+
+/* line 61, ../sass/jssor-skin.scss */
+.jssora04rdn {
+  background-position: -316px -39px;
+}
+
+/* line 63, ../sass/jssor-skin.scss */
 .jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a17.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a17.png) no-repeat;
+  overflow: hidden;
 }
-.jssora05l { background-position: -10px -40px; }
-.jssora05r { background-position: -70px -40px; }
-.jssora05l:hover { background-position: -130px -40px; }
-.jssora05r:hover { background-position: -190px -40px; }
-.jssora05ldn { background-position: -250px -40px; }
-.jssora05rdn { background-position: -310px -40px; }
 
+/* line 70, ../sass/jssor-skin.scss */
+.jssora05l {
+  background-position: -10px -40px;
+}
+
+/* line 71, ../sass/jssor-skin.scss */
+.jssora05r {
+  background-position: -70px -40px;
+}
+
+/* line 72, ../sass/jssor-skin.scss */
+.jssora05l:hover {
+  background-position: -130px -40px;
+}
+
+/* line 73, ../sass/jssor-skin.scss */
+.jssora05r:hover {
+  background-position: -190px -40px;
+}
+
+/* line 74, ../sass/jssor-skin.scss */
+.jssora05ldn {
+  background-position: -250px -40px;
+}
+
+/* line 75, ../sass/jssor-skin.scss */
+.jssora05rdn {
+  background-position: -310px -40px;
+}
+
+/* line 77, ../sass/jssor-skin.scss */
 .jssora06l, .jssora06r, .jssora06ldn, .jssora06rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a06.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a06.png) no-repeat;
+  overflow: hidden;
 }
-.jssora06l { background-position: -8px -38px; }
-.jssora06r { background-position: -68px -38px; }
-.jssora06l:hover { background-position: -128px -38px; }
-.jssora06r:hover { background-position: -188px -38px; }
-.jssora06ldn { background-position: -248px -38px; }
-.jssora06rdn { background-position: -308px -38px; }
 
+/* line 84, ../sass/jssor-skin.scss */
+.jssora06l {
+  background-position: -8px -38px;
+}
+
+/* line 85, ../sass/jssor-skin.scss */
+.jssora06r {
+  background-position: -68px -38px;
+}
+
+/* line 86, ../sass/jssor-skin.scss */
+.jssora06l:hover {
+  background-position: -128px -38px;
+}
+
+/* line 87, ../sass/jssor-skin.scss */
+.jssora06r:hover {
+  background-position: -188px -38px;
+}
+
+/* line 88, ../sass/jssor-skin.scss */
+.jssora06ldn {
+  background-position: -248px -38px;
+}
+
+/* line 89, ../sass/jssor-skin.scss */
+.jssora06rdn {
+  background-position: -308px -38px;
+}
+
+/* line 91, ../sass/jssor-skin.scss */
 .jssora07l, .jssora07r, .jssora07ldn, .jssora07rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a07.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a07.png) no-repeat;
+  overflow: hidden;
 }
-.jssora07l { background-position: -5px -35px; }
-.jssora07r { background-position: -65px -35px; }
-.jssora07l:hover { background-position: -125px -35px; }
-.jssora07r:hover { background-position: -185px -35px; }
-.jssora07ldn { background-position: -245px -35px; }
-.jssora07rdn { background-position: -305px -35px; }
 
+/* line 98, ../sass/jssor-skin.scss */
+.jssora07l {
+  background-position: -5px -35px;
+}
+
+/* line 99, ../sass/jssor-skin.scss */
+.jssora07r {
+  background-position: -65px -35px;
+}
+
+/* line 100, ../sass/jssor-skin.scss */
+.jssora07l:hover {
+  background-position: -125px -35px;
+}
+
+/* line 101, ../sass/jssor-skin.scss */
+.jssora07r:hover {
+  background-position: -185px -35px;
+}
+
+/* line 102, ../sass/jssor-skin.scss */
+.jssora07ldn {
+  background-position: -245px -35px;
+}
+
+/* line 103, ../sass/jssor-skin.scss */
+.jssora07rdn {
+  background-position: -305px -35px;
+}
+
+/* line 105, ../sass/jssor-skin.scss */
 .jssorb08l, .jssorb08r, .jssorb08ldn, .jssorb08rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a08.png) no-repeat;
-    overflow:hidden;
-    opacity: .4; filter:alpha(opacity=40);
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a08.png) no-repeat;
+  overflow: hidden;
+  opacity: .4;
+  filter: alpha(opacity=40);
 }
-.jssorb08l { background-position: -5px -35px; }
-.jssorb08r { background-position: -65px -35px; }
-.jssorb08l:hover { background-position: -5px -35px; opacity: .8; filter:alpha(opacity=80); }
-.jssorb08r:hover { background-position: -65px -35px; opacity: .8; filter:alpha(opacity=80); }
-.jssorb08ldn { background-position: -5px -35px; opacity: .3; filter:alpha(opacity=30); }
-.jssorb08rdn { background-position: -65px -35px; opacity: .3; filter:alpha(opacity=30); }
 
+/* line 113, ../sass/jssor-skin.scss */
+.jssorb08l {
+  background-position: -5px -35px;
+}
+
+/* line 114, ../sass/jssor-skin.scss */
+.jssorb08r {
+  background-position: -65px -35px;
+}
+
+/* line 115, ../sass/jssor-skin.scss */
+.jssorb08l:hover {
+  background-position: -5px -35px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+/* line 116, ../sass/jssor-skin.scss */
+.jssorb08r:hover {
+  background-position: -65px -35px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+/* line 117, ../sass/jssor-skin.scss */
+.jssorb08ldn {
+  background-position: -5px -35px;
+  opacity: .3;
+  filter: alpha(opacity=30);
+}
+
+/* line 118, ../sass/jssor-skin.scss */
+.jssorb08rdn {
+  background-position: -65px -35px;
+  opacity: .3;
+  filter: alpha(opacity=30);
+}
+
+/* line 120, ../sass/jssor-skin.scss */
 .jssora09l, .jssora09r, .jssora09ldn, .jssora09rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a09.png) no-repeat;
-    overflow:hidden;
-    opacity: .4; filter:alpha(opacity=40);
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a09.png) no-repeat;
+  overflow: hidden;
+  opacity: .4;
+  filter: alpha(opacity=40);
 }
-.jssora09l { background-position: -5px -35px; }
-.jssora09r { background-position: -65px -35px; }
-.jssora09l:hover { background-position: -5px -35px; opacity: .8; filter:alpha(opacity=80); }
-.jssora09r:hover { background-position: -65px -35px; opacity: .8; filter:alpha(opacity=80); }
-.jssora09ldn { background-position: -5px -35px; opacity: .3; filter:alpha(opacity=30); }
-.jssora09rdn { background-position: -65px -35px; opacity: .3; filter:alpha(opacity=30); }
 
+/* line 128, ../sass/jssor-skin.scss */
+.jssora09l {
+  background-position: -5px -35px;
+}
+
+/* line 129, ../sass/jssor-skin.scss */
+.jssora09r {
+  background-position: -65px -35px;
+}
+
+/* line 130, ../sass/jssor-skin.scss */
+.jssora09l:hover {
+  background-position: -5px -35px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+/* line 131, ../sass/jssor-skin.scss */
+.jssora09r:hover {
+  background-position: -65px -35px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+/* line 132, ../sass/jssor-skin.scss */
+.jssora09ldn {
+  background-position: -5px -35px;
+  opacity: .3;
+  filter: alpha(opacity=30);
+}
+
+/* line 133, ../sass/jssor-skin.scss */
+.jssora09rdn {
+  background-position: -65px -35px;
+  opacity: .3;
+  filter: alpha(opacity=30);
+}
+
+/* line 135, ../sass/jssor-skin.scss */
 .jssora10l, .jssora10r, .jssora10ldn, .jssora10rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a10.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a10.png) no-repeat;
+  overflow: hidden;
 }
-.jssora10l { background-position: -16px -39px; }
-.jssora10r { background-position: -76px -39px; }
-.jssora10l:hover { background-position: -136px -39px; }
-.jssora10r:hover { background-position: -196px -39px; }
-.jssora10ldn { background-position: -256px -39px; }
-.jssora10rdn { background-position: -316px -39px; }
 
+/* line 142, ../sass/jssor-skin.scss */
+.jssora10l {
+  background-position: -16px -39px;
+}
+
+/* line 143, ../sass/jssor-skin.scss */
+.jssora10r {
+  background-position: -76px -39px;
+}
+
+/* line 144, ../sass/jssor-skin.scss */
+.jssora10l:hover {
+  background-position: -136px -39px;
+}
+
+/* line 145, ../sass/jssor-skin.scss */
+.jssora10r:hover {
+  background-position: -196px -39px;
+}
+
+/* line 146, ../sass/jssor-skin.scss */
+.jssora10ldn {
+  background-position: -256px -39px;
+}
+
+/* line 147, ../sass/jssor-skin.scss */
+.jssora10rdn {
+  background-position: -316px -39px;
+}
+
+/* line 149, ../sass/jssor-skin.scss */
 .jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a11.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a11.png) no-repeat;
+  overflow: hidden;
 }
-.jssora11l { background-position: -11px -41px; }
-.jssora11r { background-position: -71px -41px; }
-.jssora11l:hover { background-position: -131px -41px; }
-.jssora11r:hover { background-position: -191px -41px; }
-.jssora11ldn { background-position: -251px -41px; }
-.jssora11rdn { background-position: -311px -41px; }
 
+/* line 156, ../sass/jssor-skin.scss */
+.jssora11l {
+  background-position: -11px -41px;
+}
+
+/* line 157, ../sass/jssor-skin.scss */
+.jssora11r {
+  background-position: -71px -41px;
+}
+
+/* line 158, ../sass/jssor-skin.scss */
+.jssora11l:hover {
+  background-position: -131px -41px;
+}
+
+/* line 159, ../sass/jssor-skin.scss */
+.jssora11r:hover {
+  background-position: -191px -41px;
+}
+
+/* line 160, ../sass/jssor-skin.scss */
+.jssora11ldn {
+  background-position: -251px -41px;
+}
+
+/* line 161, ../sass/jssor-skin.scss */
+.jssora11rdn {
+  background-position: -311px -41px;
+}
+
+/* line 163, ../sass/jssor-skin.scss */
 .jssora12l, .jssora12r, .jssora12ldn, .jssora12rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a12.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a12.png) no-repeat;
+  overflow: hidden;
 }
-.jssora12l { background-position: -16px -37px; }
-.jssora12r { background-position: -75px -37px; }
-.jssora12l:hover { background-position: -136px -37px; }
-.jssora12r:hover { background-position: -195px -37px; }
-.jssora12ldn { background-position: -256px -37px; }
-.jssora12rdn { background-position: -315px -37px; }
 
+/* line 170, ../sass/jssor-skin.scss */
+.jssora12l {
+  background-position: -16px -37px;
+}
+
+/* line 171, ../sass/jssor-skin.scss */
+.jssora12r {
+  background-position: -75px -37px;
+}
+
+/* line 172, ../sass/jssor-skin.scss */
+.jssora12l:hover {
+  background-position: -136px -37px;
+}
+
+/* line 173, ../sass/jssor-skin.scss */
+.jssora12r:hover {
+  background-position: -195px -37px;
+}
+
+/* line 174, ../sass/jssor-skin.scss */
+.jssora12ldn {
+  background-position: -256px -37px;
+}
+
+/* line 175, ../sass/jssor-skin.scss */
+.jssora12rdn {
+  background-position: -315px -37px;
+}
+
+/* line 177, ../sass/jssor-skin.scss */
 .jssora13l, .jssora13r, .jssora13ldn, .jssora13rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a13.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a13.png) no-repeat;
+  overflow: hidden;
 }
-.jssora13l { background-position: -10px -35px; }
-.jssora13r { background-position: -70px -35px; }
-.jssora13l:hover { background-position: -130px -35px; }
-.jssora13r:hover { background-position: -190px -35px; }
-.jssora13ldn { background-position: -250px -35px; }
-.jssora13rdn { background-position: -310px -35px; }
 
+/* line 184, ../sass/jssor-skin.scss */
+.jssora13l {
+  background-position: -10px -35px;
+}
+
+/* line 185, ../sass/jssor-skin.scss */
+.jssora13r {
+  background-position: -70px -35px;
+}
+
+/* line 186, ../sass/jssor-skin.scss */
+.jssora13l:hover {
+  background-position: -130px -35px;
+}
+
+/* line 187, ../sass/jssor-skin.scss */
+.jssora13r:hover {
+  background-position: -190px -35px;
+}
+
+/* line 188, ../sass/jssor-skin.scss */
+.jssora13ldn {
+  background-position: -250px -35px;
+}
+
+/* line 189, ../sass/jssor-skin.scss */
+.jssora13rdn {
+  background-position: -310px -35px;
+}
+
+/* line 191, ../sass/jssor-skin.scss */
 .jssora14l, .jssora14r, .jssora14ldn, .jssora14rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a14.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a14.png) no-repeat;
+  overflow: hidden;
 }
-.jssora14l { background-position: -15px -35px; }
-.jssora14r { background-position: -75px -35px; }
-.jssora14l:hover { background-position: -135px -35px; }
-.jssora14r:hover { background-position: -195px -35px; }
-.jssora14ldn { background-position: -255px -35px; }
-.jssora14rdn { background-position: -315px -35px; }
 
+/* line 198, ../sass/jssor-skin.scss */
+.jssora14l {
+  background-position: -15px -35px;
+}
+
+/* line 199, ../sass/jssor-skin.scss */
+.jssora14r {
+  background-position: -75px -35px;
+}
+
+/* line 200, ../sass/jssor-skin.scss */
+.jssora14l:hover {
+  background-position: -135px -35px;
+}
+
+/* line 201, ../sass/jssor-skin.scss */
+.jssora14r:hover {
+  background-position: -195px -35px;
+}
+
+/* line 202, ../sass/jssor-skin.scss */
+.jssora14ldn {
+  background-position: -255px -35px;
+}
+
+/* line 203, ../sass/jssor-skin.scss */
+.jssora14rdn {
+  background-position: -315px -35px;
+}
+
+/* line 205, ../sass/jssor-skin.scss */
 .jssora15l, .jssora15r, .jssora15ldn, .jssora15rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a15.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a15.png) no-repeat;
+  overflow: hidden;
 }
-.jssora15l { background-position: -20px -41px; }
-.jssora15r { background-position: -80px -41px; }
-.jssora15l:hover { background-position: -140px -41px; }
-.jssora15r:hover { background-position: -200px -41px; }
-.jssora15ldn { background-position: -260px -41px; }
-.jssora15rdn { background-position: -320px -41px; }
 
+/* line 212, ../sass/jssor-skin.scss */
+.jssora15l {
+  background-position: -20px -41px;
+}
+
+/* line 213, ../sass/jssor-skin.scss */
+.jssora15r {
+  background-position: -80px -41px;
+}
+
+/* line 214, ../sass/jssor-skin.scss */
+.jssora15l:hover {
+  background-position: -140px -41px;
+}
+
+/* line 215, ../sass/jssor-skin.scss */
+.jssora15r:hover {
+  background-position: -200px -41px;
+}
+
+/* line 216, ../sass/jssor-skin.scss */
+.jssora15ldn {
+  background-position: -260px -41px;
+}
+
+/* line 217, ../sass/jssor-skin.scss */
+.jssora15rdn {
+  background-position: -320px -41px;
+}
+
+/* line 219, ../sass/jssor-skin.scss */
 .jssora16l, .jssora16r, .jssora16ldn, .jssora16rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a16.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a16.png) no-repeat;
+  overflow: hidden;
 }
-.jssora16l { background-position: -19px -42px; }
-.jssora16r { background-position: -79px -42px; }
-.jssora16l:hover { background-position: -139px -42px; }
-.jssora16r:hover { background-position: -199px -42px; }
-.jssora16ldn { background-position: -259px -42px; }
-.jssora16rdn { background-position: -319px -42px; }
 
+/* line 226, ../sass/jssor-skin.scss */
+.jssora16l {
+  background-position: -19px -42px;
+}
+
+/* line 227, ../sass/jssor-skin.scss */
+.jssora16r {
+  background-position: -79px -42px;
+}
+
+/* line 228, ../sass/jssor-skin.scss */
+.jssora16l:hover {
+  background-position: -139px -42px;
+}
+
+/* line 229, ../sass/jssor-skin.scss */
+.jssora16r:hover {
+  background-position: -199px -42px;
+}
+
+/* line 230, ../sass/jssor-skin.scss */
+.jssora16ldn {
+  background-position: -259px -42px;
+}
+
+/* line 231, ../sass/jssor-skin.scss */
+.jssora16rdn {
+  background-position: -319px -42px;
+}
+
+/* line 233, ../sass/jssor-skin.scss */
 .jssora18l, .jssora18r, .jssora18ldn, .jssora18rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a18.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a18.png) no-repeat;
+  overflow: hidden;
 }
+
+/* line 240, ../sass/jssor-skin.scss */
 .jssora18l {
-    background-position: -16px -45px;
+  background-position: -16px -45px;
 }
 
+/* line 244, ../sass/jssor-skin.scss */
 .jssora18r {
-    background-position: -76px -45px;
+  background-position: -76px -45px;
 }
 
+/* line 248, ../sass/jssor-skin.scss */
 .jssora18l:hover {
-    background-position: -136px -45px;
+  background-position: -136px -45px;
 }
 
+/* line 252, ../sass/jssor-skin.scss */
 .jssora18r:hover {
-    background-position: -196px -45px;
+  background-position: -196px -45px;
 }
 
+/* line 256, ../sass/jssor-skin.scss */
 .jssora18ldn {
-    background-position: -256px -45px;
+  background-position: -256px -45px;
 }
 
+/* line 260, ../sass/jssor-skin.scss */
 .jssora18rdn {
-    background-position: -316px -45px;
+  background-position: -316px -45px;
 }
 
+/* line 264, ../sass/jssor-skin.scss */
 .jssora19l, .jssora19r, .jssora19ldn, .jssora19rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a19.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a19.png) no-repeat;
+  overflow: hidden;
 }
-.jssora19l { background-position: -5px -35px; }
-.jssora19r { background-position: -65px -35px; }
-.jssora19l:hover { background-position: -125px -35px; }
-.jssora19r:hover { background-position: -185px -35px; }
-.jssora19ldn { background-position: -245px -35px; }
-.jssora19rdn { background-position: -305px -35px; }
 
+/* line 271, ../sass/jssor-skin.scss */
+.jssora19l {
+  background-position: -5px -35px;
+}
+
+/* line 272, ../sass/jssor-skin.scss */
+.jssora19r {
+  background-position: -65px -35px;
+}
+
+/* line 273, ../sass/jssor-skin.scss */
+.jssora19l:hover {
+  background-position: -125px -35px;
+}
+
+/* line 274, ../sass/jssor-skin.scss */
+.jssora19r:hover {
+  background-position: -185px -35px;
+}
+
+/* line 275, ../sass/jssor-skin.scss */
+.jssora19ldn {
+  background-position: -245px -35px;
+}
+
+/* line 276, ../sass/jssor-skin.scss */
+.jssora19rdn {
+  background-position: -305px -35px;
+}
+
+/* line 278, ../sass/jssor-skin.scss */
 .jssora20l, .jssora20r, .jssora20ldn, .jssora20rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a20.png) no-repeat;
-    overflow:hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a20.png) no-repeat;
+  overflow: hidden;
 }
-.jssora20l { background-position: -3px -33px; }
-.jssora20r { background-position: -63px -33px; }
-.jssora20l:hover { background-position: -123px -33px; }
-.jssora20r:hover { background-position: -183px -33px; }
-.jssora20ldn { background-position: -243px -33px; }
-.jssora20rdn { background-position: -303px -33px; }
 
+/* line 285, ../sass/jssor-skin.scss */
+.jssora20l {
+  background-position: -3px -33px;
+}
+
+/* line 286, ../sass/jssor-skin.scss */
+.jssora20r {
+  background-position: -63px -33px;
+}
+
+/* line 287, ../sass/jssor-skin.scss */
+.jssora20l:hover {
+  background-position: -123px -33px;
+}
+
+/* line 288, ../sass/jssor-skin.scss */
+.jssora20r:hover {
+  background-position: -183px -33px;
+}
+
+/* line 289, ../sass/jssor-skin.scss */
+.jssora20ldn {
+  background-position: -243px -33px;
+}
+
+/* line 290, ../sass/jssor-skin.scss */
+.jssora20rdn {
+  background-position: -303px -33px;
+}
+
+/* line 292, ../sass/jssor-skin.scss */
 .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
-    position: absolute;
-    cursor: pointer;
-    display: block;
-    background: url(/libraries/jssor-slider/img/a21.png) center center no-repeat;
-    overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  background: url(/libraries/jssor-slider/img/a21.png) center center no-repeat;
+  overflow: hidden;
 }
-.jssora21l { background-position: -3px -33px; }
-.jssora21r { background-position: -63px -33px; }
-.jssora21l:hover { background-position: -123px -33px; }
-.jssora21r:hover { background-position: -183px -33px; }
-.jssora21ldn { background-position: -243px -33px; }
-.jssora21rdn { background-position: -303px -33px; }
 
+/* line 299, ../sass/jssor-skin.scss */
+.jssora21l {
+  background-position: -3px -33px;
+}
 
+/* line 300, ../sass/jssor-skin.scss */
+.jssora21r {
+  background-position: -63px -33px;
+}
 
+/* line 301, ../sass/jssor-skin.scss */
+.jssora21l:hover {
+  background-position: -123px -33px;
+}
 
+/* line 302, ../sass/jssor-skin.scss */
+.jssora21r:hover {
+  background-position: -183px -33px;
+}
 
+/* line 303, ../sass/jssor-skin.scss */
+.jssora21ldn {
+  background-position: -243px -33px;
+}
 
+/* line 304, ../sass/jssor-skin.scss */
+.jssora21rdn {
+  background-position: -303px -33px;
+}
+
+/* line 316, ../sass/jssor-skin.scss */
 .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
-    filter: alpha(opacity=70);
-    opacity: .7;
-    overflow:hidden;
-    cursor: pointer;
-    border: #000 1px solid;
+  filter: alpha(opacity=70);
+  opacity: .7;
+  overflow: hidden;
+  cursor: pointer;
+  border: #000 1px solid;
 }
-.jssorb01 div { background-color: gray; }
-.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
-.jssorb01 .av { background-color: #fff; }
-.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
 
+/* line 323, ../sass/jssor-skin.scss */
+.jssorb01 div {
+  background-color: gray;
+}
+
+/* line 324, ../sass/jssor-skin.scss */
+.jssorb01 div:hover, .jssorb01 .av:hover {
+  background-color: #d3d3d3;
+}
+
+/* line 325, ../sass/jssor-skin.scss */
+.jssorb01 .av {
+  background-color: #fff;
+}
+
+/* line 326, ../sass/jssor-skin.scss */
+.jssorb01 .dn, .jssorb01 .dn:hover {
+  background-color: #555555;
+}
+
+/* line 328, ../sass/jssor-skin.scss */
 .jssorb02 div, .jssorb02 div:hover, .jssorb02 .av {
-    background: url(/libraries/jssor-slider/img/b02.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b02.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb02 div { background-position: -5px -5px; }
-.jssorb02 div:hover, .jssorb02 .av:hover { background-position: -35px -5px; }
-.jssorb02 .av { background-position: -65px -5px; }
-.jssorb02 .dn, .jssorb02 .dn:hover { background-position: -95px -5px; }
 
+/* line 333, ../sass/jssor-skin.scss */
+.jssorb02 div {
+  background-position: -5px -5px;
+}
+
+/* line 334, ../sass/jssor-skin.scss */
+.jssorb02 div:hover, .jssorb02 .av:hover {
+  background-position: -35px -5px;
+}
+
+/* line 335, ../sass/jssor-skin.scss */
+.jssorb02 .av {
+  background-position: -65px -5px;
+}
+
+/* line 336, ../sass/jssor-skin.scss */
+.jssorb02 .dn, .jssorb02 .dn:hover {
+  background-position: -95px -5px;
+}
+
+/* line 338, ../sass/jssor-skin.scss */
 .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
-    background: url(/libraries/jssor-slider/img/b03.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b03.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb03 div { background-position: -5px -4px; }
-.jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
-.jssorb03 .av { background-position: -65px -4px; }
-.jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
 
+/* line 343, ../sass/jssor-skin.scss */
+.jssorb03 div {
+  background-position: -5px -4px;
+}
+
+/* line 344, ../sass/jssor-skin.scss */
+.jssorb03 div:hover, .jssorb03 .av:hover {
+  background-position: -35px -4px;
+}
+
+/* line 345, ../sass/jssor-skin.scss */
+.jssorb03 .av {
+  background-position: -65px -4px;
+}
+
+/* line 346, ../sass/jssor-skin.scss */
+.jssorb03 .dn, .jssorb03 .dn:hover {
+  background-position: -95px -4px;
+}
+
+/* line 348, ../sass/jssor-skin.scss */
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-    background: url(/libraries/jssor-slider/img/b05.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b05.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb05 div { background-position: -7px -7px; }
-.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-.jssorb05 .av { background-position: -67px -7px; }
-.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
+/* line 353, ../sass/jssor-skin.scss */
+.jssorb05 div {
+  background-position: -7px -7px;
+}
+
+/* line 354, ../sass/jssor-skin.scss */
+.jssorb05 div:hover, .jssorb05 .av:hover {
+  background-position: -37px -7px;
+}
+
+/* line 355, ../sass/jssor-skin.scss */
+.jssorb05 .av {
+  background-position: -67px -7px;
+}
+
+/* line 356, ../sass/jssor-skin.scss */
+.jssorb05 .dn, .jssorb05 .dn:hover {
+  background-position: -97px -7px;
+}
+
+/* line 358, ../sass/jssor-skin.scss */
 .jssorb06 div, .jssorb06 div:hover, .jssorb06 .av {
-    background: url(/libraries/jssor-slider/img/b06.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b06.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb06 div { background-position: -6px -6px; }
-.jssorb06 div:hover, .jssorb06 .av:hover { background-position: -36px -6px; }
-.jssorb06 .av { background-position: -66px -6px; }
-.jssorb06 .dn, .jssorb06 .dn:hover { background-position: -96px -6px; }
 
+/* line 363, ../sass/jssor-skin.scss */
+.jssorb06 div {
+  background-position: -6px -6px;
+}
+
+/* line 364, ../sass/jssor-skin.scss */
+.jssorb06 div:hover, .jssorb06 .av:hover {
+  background-position: -36px -6px;
+}
+
+/* line 365, ../sass/jssor-skin.scss */
+.jssorb06 .av {
+  background-position: -66px -6px;
+}
+
+/* line 366, ../sass/jssor-skin.scss */
+.jssorb06 .dn, .jssorb06 .dn:hover {
+  background-position: -96px -6px;
+}
+
+/* line 368, ../sass/jssor-skin.scss */
 .jssorb07 div, .jssorb07 div:hover, .jssorb07 .av {
-    background: url(/libraries/jssor-slider/img/b07.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b07.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb07 div { background-position: -5px -5px; }
-.jssorb07 div:hover, .jssorb07 .av:hover { background-position: -35px -5px; }
-.jssorb07 .av { background-position: -65px -5px; }
-.jssorb07 .dn, .jssorb07 .dn:hover { background-position: -95px -5px; }
 
+/* line 373, ../sass/jssor-skin.scss */
+.jssorb07 div {
+  background-position: -5px -5px;
+}
+
+/* line 374, ../sass/jssor-skin.scss */
+.jssorb07 div:hover, .jssorb07 .av:hover {
+  background-position: -35px -5px;
+}
+
+/* line 375, ../sass/jssor-skin.scss */
+.jssorb07 .av {
+  background-position: -65px -5px;
+}
+
+/* line 376, ../sass/jssor-skin.scss */
+.jssorb07 .dn, .jssorb07 .dn:hover {
+  background-position: -95px -5px;
+}
+
+/* line 378, ../sass/jssor-skin.scss */
 .jssorb09 div, .jssorb09 div:hover, .jssorb09 .av {
-    filter: alpha(opacity=70);
-    opacity: .7;
-    overflow:hidden;
-    cursor: pointer;
-    border: #fff 1px solid;
+  filter: alpha(opacity=70);
+  opacity: .7;
+  overflow: hidden;
+  cursor: pointer;
+  border: #fff 1px solid;
 }
-.jssorb09 div { background-color: #d3d3d3; }
-.jssorb09 div:hover, .jssorb09 .av:hover { background-color: gray; }
-.jssorb09 .av { background-color: #000; }
-.jssorb09 .dn, .jssorb09 .dn:hover { background-color: #a9a9a9; }
 
+/* line 385, ../sass/jssor-skin.scss */
+.jssorb09 div {
+  background-color: #d3d3d3;
+}
+
+/* line 386, ../sass/jssor-skin.scss */
+.jssorb09 div:hover, .jssorb09 .av:hover {
+  background-color: gray;
+}
+
+/* line 387, ../sass/jssor-skin.scss */
+.jssorb09 .av {
+  background-color: #000;
+}
+
+/* line 388, ../sass/jssor-skin.scss */
+.jssorb09 .dn, .jssorb09 .dn:hover {
+  background-color: #a9a9a9;
+}
+
+/* line 390, ../sass/jssor-skin.scss */
 .jssorb10 div, .jssorb10 div:hover, .jssorb10 .av {
-    background: url(/libraries/jssor-slider/img/b10.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b10.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb10 div { background-position: -10px -10px; }
-.jssorb10 div:hover, .jssorb10 .av:hover { background-position: -40px -10px; }
-.jssorb10 .av { background-position: -70px -10px; }
-.jssorb10 .dn, .jssorb10 .dn:hover { background-position: -100px -10px; }
 
+/* line 395, ../sass/jssor-skin.scss */
+.jssorb10 div {
+  background-position: -10px -10px;
+}
+
+/* line 396, ../sass/jssor-skin.scss */
+.jssorb10 div:hover, .jssorb10 .av:hover {
+  background-position: -40px -10px;
+}
+
+/* line 397, ../sass/jssor-skin.scss */
+.jssorb10 .av {
+  background-position: -70px -10px;
+}
+
+/* line 398, ../sass/jssor-skin.scss */
+.jssorb10 .dn, .jssorb10 .dn:hover {
+  background-position: -100px -10px;
+}
+
+/* line 400, ../sass/jssor-skin.scss */
 .jssorb11 div, .jssorb11 div:hover, .jssorb11 .av {
-    background: url(/libraries/jssor-slider/img/b11.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b11.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb11 div { background-position: -10px -10px; }
-.jssorb11 div:hover, .jssorb11 .av:hover { background-position: -40px -10px; }
-.jssorb11 .av { background-position: -70px -10px; }
-.jssorb11 .dn, .jssorb11 .dn:hover { background-position: -100px -10px; }
 
+/* line 405, ../sass/jssor-skin.scss */
+.jssorb11 div {
+  background-position: -10px -10px;
+}
+
+/* line 406, ../sass/jssor-skin.scss */
+.jssorb11 div:hover, .jssorb11 .av:hover {
+  background-position: -40px -10px;
+}
+
+/* line 407, ../sass/jssor-skin.scss */
+.jssorb11 .av {
+  background-position: -70px -10px;
+}
+
+/* line 408, ../sass/jssor-skin.scss */
+.jssorb11 .dn, .jssorb11 .dn:hover {
+  background-position: -100px -10px;
+}
+
+/* line 410, ../sass/jssor-skin.scss */
 .jssorb12 div, .jssorb12 div:hover, .jssorb12 .av {
-    background: url(/libraries/jssor-slider/img/b12.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b12.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb12 div { background-position: -7px -7px; }
-.jssorb12 div:hover, .jssorb12 .av:hover { background-position: -37px -7px; }
-.jssorb12 .av { background-position: -67px -7px; }
-.jssorb12 .dn, .jssorb12 .dn:hover { background-position: -97px -7px; }
 
+/* line 415, ../sass/jssor-skin.scss */
+.jssorb12 div {
+  background-position: -7px -7px;
+}
+
+/* line 416, ../sass/jssor-skin.scss */
+.jssorb12 div:hover, .jssorb12 .av:hover {
+  background-position: -37px -7px;
+}
+
+/* line 417, ../sass/jssor-skin.scss */
+.jssorb12 .av {
+  background-position: -67px -7px;
+}
+
+/* line 418, ../sass/jssor-skin.scss */
+.jssorb12 .dn, .jssorb12 .dn:hover {
+  background-position: -97px -7px;
+}
+
+/* line 420, ../sass/jssor-skin.scss */
 .jssorb13 div, .jssorb13 div:hover, .jssorb13 .av {
-    background: url(/libraries/jssor-slider/img/b13.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b13.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb13 div { background-position: -5px -5px; }
-.jssorb13 div:hover, .jssorb13 .av:hover { background-position: -35px -5px; }
-.jssorb13 .av { background-position: -65px -5px; }
-.jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
 
+/* line 425, ../sass/jssor-skin.scss */
+.jssorb13 div {
+  background-position: -5px -5px;
+}
+
+/* line 426, ../sass/jssor-skin.scss */
+.jssorb13 div:hover, .jssorb13 .av:hover {
+  background-position: -35px -5px;
+}
+
+/* line 427, ../sass/jssor-skin.scss */
+.jssorb13 .av {
+  background-position: -65px -5px;
+}
+
+/* line 428, ../sass/jssor-skin.scss */
+.jssorb13 .dn, .jssorb13 .dn:hover {
+  background-position: -95px -5px;
+}
+
+/* line 430, ../sass/jssor-skin.scss */
 .jssorb14 div, .jssorb14 div:hover, .jssorb14 .av {
-    background: url(/libraries/jssor-slider/img/b14.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b14.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb14 div { background-position: -9px -9px; }
-.jssorb14 div:hover, .jssorb14 .av:hover { background-position: -39px -9px; }
-.jssorb14 .av { background-position: -69px -9px; }
-.jssorb14 .dn, .jssorb14 .dn:hover { background-position: -99px -9px; }
 
+/* line 435, ../sass/jssor-skin.scss */
+.jssorb14 div {
+  background-position: -9px -9px;
+}
+
+/* line 436, ../sass/jssor-skin.scss */
+.jssorb14 div:hover, .jssorb14 .av:hover {
+  background-position: -39px -9px;
+}
+
+/* line 437, ../sass/jssor-skin.scss */
+.jssorb14 .av {
+  background-position: -69px -9px;
+}
+
+/* line 438, ../sass/jssor-skin.scss */
+.jssorb14 .dn, .jssorb14 .dn:hover {
+  background-position: -99px -9px;
+}
+
+/* line 440, ../sass/jssor-skin.scss */
 .jssorb16 div, .jssorb16 div:hover, .jssorb16 .av {
-    background: url(/libraries/jssor-slider/img/b16.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b16.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb16 div { background-position: -5px -5px; }
-.jssorb16 div:hover, .jssorb16 .av:hover { background-position: -35px -5px; }
-.jssorb16 .av { background-position: -65px -5px; }
-.jssorb16 .dn, .jssorb16 .dn:hover { background-position: -95px -5px; }
 
+/* line 445, ../sass/jssor-skin.scss */
+.jssorb16 div {
+  background-position: -5px -5px;
+}
+
+/* line 446, ../sass/jssor-skin.scss */
+.jssorb16 div:hover, .jssorb16 .av:hover {
+  background-position: -35px -5px;
+}
+
+/* line 447, ../sass/jssor-skin.scss */
+.jssorb16 .av {
+  background-position: -65px -5px;
+}
+
+/* line 448, ../sass/jssor-skin.scss */
+.jssorb16 .dn, .jssorb16 .dn:hover {
+  background-position: -95px -5px;
+}
+
+/* line 450, ../sass/jssor-skin.scss */
 .jssorb17 div, .jssorb17 div:hover, .jssorb17 .av {
-    background: url(/libraries/jssor-slider/img/b17.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b17.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb17 div { background-position: -7px -7px; }
-.jssorb17 div:hover, .jssorb17 .av:hover { background-position: -37px -7px; }
-.jssorb17 .av { background-position: -67px -7px; }
-.jssorb17 .dn, .jssorb17 .dn:hover { background-position: -97px -7px; }
 
+/* line 455, ../sass/jssor-skin.scss */
+.jssorb17 div {
+  background-position: -7px -7px;
+}
+
+/* line 456, ../sass/jssor-skin.scss */
+.jssorb17 div:hover, .jssorb17 .av:hover {
+  background-position: -37px -7px;
+}
+
+/* line 457, ../sass/jssor-skin.scss */
+.jssorb17 .av {
+  background-position: -67px -7px;
+}
+
+/* line 458, ../sass/jssor-skin.scss */
+.jssorb17 .dn, .jssorb17 .dn:hover {
+  background-position: -97px -7px;
+}
+
+/* line 460, ../sass/jssor-skin.scss */
 .jssorb18 div, .jssorb18 div:hover, .jssorb18 .av {
-    background: url(/libraries/jssor-slider/img/b18.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b18.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb18 div { background-position: -3px -3px; }
-.jssorb18 div:hover, .jssorb18 .av:hover { background-position: -33px -3px; }
-.jssorb18 .av { background-position: -63px -3px; }
-.jssorb18 .dn, .jssorb18 .dn:hover { background-position: -93px -3px; }
 
+/* line 465, ../sass/jssor-skin.scss */
+.jssorb18 div {
+  background-position: -3px -3px;
+}
+
+/* line 466, ../sass/jssor-skin.scss */
+.jssorb18 div:hover, .jssorb18 .av:hover {
+  background-position: -33px -3px;
+}
+
+/* line 467, ../sass/jssor-skin.scss */
+.jssorb18 .av {
+  background-position: -63px -3px;
+}
+
+/* line 468, ../sass/jssor-skin.scss */
+.jssorb18 .dn, .jssorb18 .dn:hover {
+  background-position: -93px -3px;
+}
+
+/* line 470, ../sass/jssor-skin.scss */
 .jssorb18 .n {
-    display: none;
-    color: #000;
+  display: none;
+  color: #000;
 }
-.jssorb18 div:hover .n, .jssorb18 .av .n, .jssorb18 .av:hover .n, .jssorb18 .dn .n { display: block; }
 
+/* line 474, ../sass/jssor-skin.scss */
+.jssorb18 div:hover .n, .jssorb18 .av .n, .jssorb18 .av:hover .n, .jssorb18 .dn .n {
+  display: block;
+}
+
+/* line 476, ../sass/jssor-skin.scss */
 .jssorb20 div, .jssorb20 div:hover, .jssorb20 .av {
-    background: url(/libraries/jssor-slider/img/b20.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+  background: url(/libraries/jssor-slider/img/b20.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
-.jssorb20 div { background-position: -5px -5px; }
-.jssorb20 div:hover, .jssorb20 .av:hover { background-position: -35px -5px; }
-.jssorb20 .av { background-position: -65px -5px; }
-.jssorb20 .dn, .jssorb20 .dn:hover { background-position: -95px -5px; }
 
-.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-    background: url(/libraries/jssor-slider/img/b21.png) no-repeat;
-    overflow:hidden;
-    cursor: pointer;
+/* line 481, ../sass/jssor-skin.scss */
+.jssorb20 div {
+  background-position: -5px -5px;
 }
-.jssorb21 div { background-position: -5px -5px; }
-.jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
-.jssorb21 .av { background-position: -65px -5px; }
-.jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+
+/* line 482, ../sass/jssor-skin.scss */
+.jssorb20 div:hover, .jssorb20 .av:hover {
+  background-position: -35px -5px;
+}
+
+/* line 483, ../sass/jssor-skin.scss */
+.jssorb20 .av {
+  background-position: -65px -5px;
+}
+
+/* line 484, ../sass/jssor-skin.scss */
+.jssorb20 .dn, .jssorb20 .dn:hover {
+  background-position: -95px -5px;
+}
+
+/* line 486, ../sass/jssor-skin.scss */
+.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+  background: url(/libraries/jssor-slider/img/b21.png) no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 491, ../sass/jssor-skin.scss */
+.jssorb21 div {
+  background-position: -5px -5px;
+}
+
+/* line 492, ../sass/jssor-skin.scss */
+.jssorb21 div:hover, .jssorb21 .av:hover {
+  background-position: -35px -5px;
+}
+
+/* line 493, ../sass/jssor-skin.scss */
+.jssorb21 .av {
+  background-position: -65px -5px;
+}
+
+/* line 494, ../sass/jssor-skin.scss */
+.jssorb21 .dn, .jssorb21 .dn:hover {
+  background-position: -95px -5px;
+}
