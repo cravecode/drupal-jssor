@@ -313,6 +313,7 @@
 
 
 // Bullets navigator.
+// 1st bullet navigator.
 .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
   filter: alpha(opacity=70);
   opacity: .7;
@@ -325,16 +326,27 @@
 .jssorb01 .av { background-color: #fff; }
 .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
 
+// 2nd bullet navigator.
 .jssorb02 div, .jssorb02 div:hover, .jssorb02 .av {
   background: url(/libraries/jssor-slider/img/b02.png) no-repeat;
   overflow:hidden;
   cursor: pointer;
 }
-.jssorb02 div { background-position: -5px -5px; }
-.jssorb02 div:hover, .jssorb02 .av:hover { background-position: -35px -5px; }
-.jssorb02 .av { background-position: -65px -5px; }
-.jssorb02 .dn, .jssorb02 .dn:hover { background-position: -95px -5px; }
+.jssorb02 div {
+  background-position: -5px -5px;
+  padding-right: 5px;
+}
+.jssorb02 div:hover, .jssorb02 .av:hover {
+  background-position: -35px -5px;
+}
+.jssorb02 .av {
+  background-position: -65px -5px;
+}
+.jssorb02 .dn, .jssorb02 .dn:hover {
+  background-position: -95px -5px;
+}
 
+// 3rd bullet navigator.
 .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
   background: url(/libraries/jssor-slider/img/b03.png) no-repeat;
   overflow:hidden;
@@ -344,7 +356,7 @@
 .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
 .jssorb03 .av { background-position: -65px -4px; }
 .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
-
+// 4th bullet navigator.
 .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
   background: url(/libraries/jssor-slider/img/b05.png) no-repeat;
   overflow:hidden;
