@@ -26,7 +26,7 @@ function jssor_theme() {
  * Implements hook_views_pre_render().
  */
 function jssor_views_pre_render($view) {
-  if ($view->storage->id === 'test') {
+  if ($view->storage->id() === 'test') {
     //$view->element['#attached']['js'][] = array('type' => 'setting', 'data' => $settings);
     //$view->element['#attached']['library'][] = 'views/views.ajax';
   }
