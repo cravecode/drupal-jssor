@@ -37,12 +37,24 @@ function template_preprocess_jssor(&$variables) {
     'view_dom_id' => $view->dom_id,
     '$AutoPlay' => ($options['global']['autoplay']) ? true : false,
     '$AutoPlayInterval' => (int) $options['global']['autoplayinterval'],
+    '$AutoPlaySteps' => (int) $options['global']['autoplaysteps'],
+    '$PauseOnHover' => (int) $options['global']['pauseonhover'],
     '$ArrowNavigatorOptions' => array(
       '$Class' => '$JssorArrowNavigator$',
-      '$AutoCenter' => 2,
+      '$AutoCenter' => (int) $options['arrownavigator']['autocenter'],
+      '$ChanceToShow' => (int) $options['arrownavigator']['chancetoshow'],
     ),
     '$BulletNavigatorOptions' => array(
       '$Class' => '$JssorBulletNavigator$',
+      '$AutoCenter' =>  (int) $options['bulletnavigator']['autocenter'],
+      '$ChanceToShow' => (int) $options['bulletnavigator']['chancetoshow'],
+      '$Class' => '$JssorBulletNavigator$',
+      '$Steps' => (int) $options['bulletnavigator']['steps'],
+      '$Lanes' => (int) $options['bulletnavigator']['lanes'],
+      '$SpacingX' => (int) $options['bulletnavigator']['spacingx'],
+      '$SpacingY' => (int) $options['bulletnavigator']['spacingy'],
+      '$Orientation' => (int) $options['bulletnavigator']['orientation'],
+      '$Scale' => false,
     ),
   );
 

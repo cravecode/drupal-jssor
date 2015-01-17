@@ -38,34 +38,10 @@
   </div>
 
   {% if bulletnavigator %}
-    <!-- Bullet Navigator Skin End -->
-    <style>
-      .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-        background: url(/libraries/jssor-slider/img/b05.png) no-repeat;
-        overflow: hidden;
-        cursor: pointer;
-      }
-
-      .jssorb05 div {
-        background-position: -7px -7px;
-      }
-
-      .jssorb05 div:hover, .jssorb05 .av:hover {
-        background-position: -37px -7px;
-      }
-
-      .jssorb05 .av {
-        background-position: -67px -7px;
-      }
-
-      .jssorb05 .dn, .jssorb05 .dn:hover {
-        background-position: -97px -7px;
-      }
-    </style>
     <!-- bullet navigator container -->
     <div u="navigator" class="jssorb{{ bulletskin }}" style="position: absolute; bottom: 16px; right: 6px;">
       <!-- bullet navigator item prototype -->
-      <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+      <div u="prototype" style="position: absolute; width: 16px; height: 16px;"></div>
     </div>
   {% endif %}
 

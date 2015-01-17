@@ -53,12 +53,19 @@ class Jssor extends StylePluginBase {
     $options = parent::defineOptions();
     $options['autoplay'] = array('default' => TRUE);
     $options['autoplayinterval'] = array('default' => 3000);
+    $options['autoplaysteps'] = array('default' => 1);
+    $options['pauseonhover'] = array('default' => 1);
     $options['arrownavigator'] = array('default' => FALSE);
     $options['bulletnavigator'] = array('default' => FALSE);
     $options['chancetoshow'] = array('default' => 0);
     $options['arrowskin'] = array('default' => 1);
     $options['bulletskin'] = array('default' => 1);
     $options['autocenter'] = array('default' => 0);
+    $options['spacingx'] = array('default' => 0);
+    $options['spacingy'] = array('default' => 0);
+    $options['orientation'] = array('default' => 1);
+    $options['steps'] = array('default' => 1);
+    $options['lanes'] = array('default' => 1);
     return $options;
   }
 
@@ -89,6 +96,43 @@ class Jssor extends StylePluginBase {
           $this->options['global']['autoplayinterval'] : $this->options['autoplayinterval'],
       ),
       '#description' => t('Interval (in milliseconds) to go for next slide since the previous stopped.'),
+      '#states' => array(
+        'visible' => array(
+          ':input[name="style_options[global][autoplay]"]' => array('checked' => TRUE),
+        ),
+      ),
+    );
+    $form['global']['autoplaysteps'] = array(
+      '#type' => 'number',
+      '#title' => $this->t('Autoplay step'),
+      '#attributes' => array(
+        'min' => 1,
+        'step' => 1,
+        'value' => (isset($this->options['global']['autoplaysteps'])) ?
+          $this->options['global']['autoplaysteps'] : $this->options['autoplaysteps'],
+      ),
+      '#description' => t('Steps to go for each navigation request.'),
+      '#states' => array(
+        'visible' => array(
+          ':input[name="style_options[global][autoplay]"]' => array('checked' => TRUE),
+        ),
+      ),
+    );
+    $form['global']['pauseonhover'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('Pause on hover'),
+      '#description' => t('Whether to pause when mouse over if a slider is auto playing.'),
+      '#default_value' => (isset($this->options['global']['pauseonhover'])) ?
+        $this->options['global']['pauseonhover'] : $this->options['pauseonhover'],
+      '#options' => array(
+        0 => $this->t('No pause'),
+        1 => $this->t('Pause for desktop'),
+        2 => $this->t('Pause for touch device'),
+        3 => $this->t('Pause for desktop and touch device'),
+        4 => $this->t('Freeze for desktop'),
+        8 => $this->t('Freeze for touch device'),
+        12 => $this->t('Freeze for desktop and touch device'),
+      ),
       '#states' => array(
         'visible' => array(
           ':input[name="style_options[global][autoplay]"]' => array('checked' => TRUE),
@@ -200,6 +244,60 @@ class Jssor extends StylePluginBase {
         1 => $this->t('Mouse Over'),
         2 => $this->t('Always'),
       ),
+    );
+    $form['bulletnavigator']['spacingx'] = array(
+      '#type' => 'number',
+      '#title' => $this->t('Horizontal space'),
+      '#attributes' => array(
+        'min' => 0,
+        'step' => 1,
+        'value' => (isset($this->options['bulletnavigator']['spacingx'])) ?
+          $this->options['bulletnavigator']['spacingx'] : $this->options['spacingx'],
+      ),
+      '#description' => t('Horizontal space between each item in pixel.'),
+    );
+    $form['bulletnavigator']['spacingy'] = array(
+      '#type' => 'number',
+      '#title' => $this->t('Vertical space'),
+      '#attributes' => array(
+        'min' => 0,
+        'step' => 1,
+        'value' => (isset($this->options['bulletnavigator']['spacingy'])) ?
+          $this->options['bulletnavigator']['spacingy'] : $this->options['spacingy'],
+      ),
+      '#description' => t('Vertical space between each item in pixel.'),
+    );
+    $form['bulletnavigator']['orientation'] = array(
+      '#type' => 'select',
+      '#title' => $this->t('The orientation of the navigator'),
+      '#default_value' => (isset($this->options['bulletnavigator']['orientation'])) ?
+        $this->options['bulletnavigator']['orientation'] : $this->options['orientation'],
+      '#options' => array(
+        1 => $this->t('Horizontal'),
+        2 => $this->t('Vertical'),
+      ),
+    );
+    $form['bulletnavigator']['steps'] = array(
+      '#type' => 'number',
+      '#title' => $this->t('Steps'),
+      '#attributes' => array(
+        'min' => 1,
+        'step' => 1,
+        'value' => (isset($this->options['bulletnavigator']['steps'])) ?
+          $this->options['bulletnavigator']['steps'] : $this->options['steps'],
+      ),
+      '#description' => t('Steps to go for each navigation request.'),
+    );
+    $form['bulletnavigator']['lanes'] = array(
+      '#type' => 'number',
+      '#title' => $this->t('Lanes'),
+      '#attributes' => array(
+        'min' => 1,
+        'step' => 1,
+        'value' => (isset($this->options['bulletnavigator']['lanes'])) ?
+          $this->options['bulletnavigator']['lanes'] : $this->options['lanes'],
+      ),
+      '#description' => t('Specify lanes to arrange items.'),
     );
   }
 }
