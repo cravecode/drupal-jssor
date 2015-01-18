@@ -10,6 +10,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a01.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora01l { background-position: -8px -38px; }
 .jssora01r { background-position: -68px -38px; }
@@ -24,6 +26,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a02.png) no-repeat;
   overflow:hidden;
+  width: 53px;
+  height: 53px;
 }
 .jssora02l { background-position: -3px -33px; }
 .jssora02r { background-position: -63px -33px; }
@@ -38,6 +42,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a03.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora03l { background-position: -3px -33px; }
 .jssora03r { background-position: -63px -33px; }
@@ -52,6 +58,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a04.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora04l { background-position: -16px -39px; }
 .jssora04r { background-position: -76px -39px; }
@@ -66,6 +74,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a17.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora05l { background-position: -10px -40px; }
 .jssora05r { background-position: -70px -40px; }
@@ -80,6 +90,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a06.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora06l { background-position: -8px -38px; }
 .jssora06r { background-position: -68px -38px; }
@@ -94,6 +106,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a07.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora07l { background-position: -5px -35px; }
 .jssora07r { background-position: -65px -35px; }
@@ -109,6 +123,8 @@
   background: url(/libraries/jssor-slider/img/a08.png) no-repeat;
   overflow:hidden;
   opacity: .4; filter:alpha(opacity=40);
+  width: 40px;
+  height: 40px;
 }
 .jssorb08l { background-position: -5px -35px; }
 .jssorb08r { background-position: -65px -35px; }
@@ -124,6 +140,8 @@
   background: url(/libraries/jssor-slider/img/a09.png) no-repeat;
   overflow:hidden;
   opacity: .4; filter:alpha(opacity=40);
+  width: 40px;
+  height: 40px;
 }
 .jssora09l { background-position: -5px -35px; }
 .jssora09r { background-position: -65px -35px; }
@@ -138,6 +156,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a10.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora10l { background-position: -16px -39px; }
 .jssora10r { background-position: -76px -39px; }
@@ -152,6 +172,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a11.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora11l { background-position: -11px -41px; }
 .jssora11r { background-position: -71px -41px; }
@@ -166,6 +188,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a12.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora12l { background-position: -16px -37px; }
 .jssora12r { background-position: -75px -37px; }
@@ -180,6 +204,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a13.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora13l { background-position: -10px -35px; }
 .jssora13r { background-position: -70px -35px; }
@@ -194,6 +220,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a14.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora14l { background-position: -15px -35px; }
 .jssora14r { background-position: -75px -35px; }
@@ -208,6 +236,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a15.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora15l { background-position: -20px -41px; }
 .jssora15r { background-position: -80px -41px; }
@@ -222,6 +252,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a16.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora16l { background-position: -19px -42px; }
 .jssora16r { background-position: -79px -42px; }
@@ -230,12 +262,16 @@
 .jssora16ldn { background-position: -259px -42px; }
 .jssora16rdn { background-position: -319px -42px; }
 
+// 17
+
 .jssora18l, .jssora18r, .jssora18ldn, .jssora18rdn {
   position: absolute;
   cursor: pointer;
   display: block;
   background: url(/libraries/jssor-slider/img/a18.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora18l {
   background-position: -16px -45px;
@@ -267,6 +303,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a19.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora19l { background-position: -5px -35px; }
 .jssora19r { background-position: -65px -35px; }
@@ -281,6 +319,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a20.png) no-repeat;
   overflow:hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora20l { background-position: -3px -33px; }
 .jssora20r { background-position: -63px -33px; }
@@ -295,6 +335,8 @@
   display: block;
   background: url(/libraries/jssor-slider/img/a21.png) center center no-repeat;
   overflow: hidden;
+  width: 40px;
+  height: 40px;
 }
 .jssora21l { background-position: -3px -33px; }
 .jssora21r { background-position: -63px -33px; }
