@@ -29,16 +29,38 @@ function template_preprocess_jssor(&$variables) {
   // Attach library.
   $view->element['#attached']['library'][] = 'jssor/jquery.jssor.slider';
 
+
+  $transitions = array();
+  $transition = array(
+    '$Duration' => 2000,
+    'y' => -1,
+    '$Delay' => 60,
+    '$Cols' => 16,
+    '$SlideOut' => true,
+    '$Formation' => '$JssorSlideshowFormations$.$FormationStraight',
+    '$Easing' => '$JssorEasing$.$EaseOutJump',
+    '$Round' => array(
+      '$Top' => 1.5,
+    ),
+  );
+  $transitions[] = $transition;
+
   // Attach settings.
   $view->element['#attached']['drupalSettings']['views']['jssorViews']['views_dom_id:' . $view->dom_id] = array(
     //'view_name' => $view->storage->id(),
     //'view_display_id' => $view->current_display,
     //'view_base_path' => $view->getPath(),
     'view_dom_id' => $view->dom_id,
+    'transition' => $options['global']['transition'],
     '$AutoPlay' => ($options['global']['autoplay']) ? true : false,
     '$AutoPlayInterval' => (int) $options['global']['autoplayinterval'],
     '$AutoPlaySteps' => (int) $options['global']['autoplaysteps'],
     '$PauseOnHover' => (int) $options['global']['pauseonhover'],
+    '$SlideshowOptions' => array(
+      '$Class' => '$JssorSlideshowRunner',
+      '$TransitionsOrder' => 1,
+      '$ShowLink' => true,
+    ),
     '$ArrowNavigatorOptions' => array(
       '$Class' => '$JssorArrowNavigator$',
       '$AutoCenter' => (int) $options['arrownavigator']['autocenter'],
