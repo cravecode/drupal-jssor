@@ -1,0 +1,5 @@
+name = "Jssor Slider"
+description = 'Jssor Slider'
+dependencies[] = 'libraries'
+package = Slider
+core = 7.x
