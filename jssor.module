@@ -21,18 +21,10 @@ function jssor_theme() {
   );
 }
 
-
-/**
- * Implements hook_views_pre_render().
- */
-function jssor_views_pre_render($view) {
-  if ($view->storage->id() === 'test') {
-    //$view->element['#attached']['js'][] = array('type' => 'setting', 'data' => $settings);
-    //$view->element['#attached']['library'][] = 'views/views.ajax';
-  }
-
-  return $view;
+function jssor_views_api() {
+  return array( 'api' => 3);
 }
+
 
 /**
  * Implements hook_library().
@@ -49,7 +41,7 @@ function jssor_library() {
       'website' => 'http://www.jssor.com',
       'version' => '17.0',
       'js' => array(
-        $base_path . '/js/jssor_views.js' => array(),
+        $base_path . '/js/jssor_view.js' => array('weight' => 999, 'scope' => 'footer','group' => 500),
         $slider_lib_src . '/js/jssor.slider.min.js' => array(),
       ),
       'css' => array(
@@ -85,3 +77,24 @@ function jssor_libraries_info() {
     ),
   );
 }
+
+/**
+ * Implements hook_preprocess_jssor().
+ */
+function jssor_preprocess_jssor(&$variables) {
+  // Do some D7 fixing from the D8 theme.
+  foreach($variables['rows'] as $i => $row) {
+    $variables['rows'][$i]['attributes'] = $variables['rows'][$i]['attributes']->attributes;
+  }
+
+  $variables['view']->element['#attached']['library'] = array(array('jssor', 'jquery.jssor.slider'));
+
+  drupal_add_js(array('jssor' => $variables['view']->element['#attached']['drupalSettings']), array('type' => 'setting', 'weight' => 0));
+  drupal_add_js('var drupalSettings = Drupal.settings.jssor;',
+    array('type' => 'inline', 'scope' => 'footer', 'weight' => 1)
+  );
+
+  drupal_add_library('jssor', 'jquery.jssor.slider');
+}
+
+
